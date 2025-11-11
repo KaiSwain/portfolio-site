@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Swain - Junior Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">&lt;KaiSwain /&gt;</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Kai Swain</span></h1>
+                <h2 class="hero-subtitle">Junior Software Developer</h2>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions and learning new technologies.
+                    I build responsive web applications and love solving complex problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/KaiSwain" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kai-swain/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#contact" aria-label="Contact">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="media/PHED1650.jpg" alt="Kai Swain" style="width: 400px; height: 400px; border-radius: 50%; object-fit: cover; box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="media/PHED1652.jpg" alt="Kai Swain" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);">
+                </div>
+                <div class="about-text">
+                    <h3>I'm a Junior Software Developer with a passion for building great software</h3>
+                    <p>
+                        I recently started my journey in software development and have been actively learning
+                        and building projects to enhance my skills. I'm enthusiastic about clean code,
+                        user-friendly interfaces, and continuous learning.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, learning new frameworks,
+                        or working on personal projects that solve real-world problems.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Technologies</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Commitment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-section" style="margin-top: 2rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 10px;">
+                        <h3 style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-graduation-cap" style="color: var(--primary-color);"></i>
+                            Education
+                        </h3>
+                        <div style="padding-left: 0.5rem;">
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">Nashville Software School</h4>
+                            <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Full-Stack Web Development Bootcamp</p>
+                            <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">6-month intensive program</p>
+                            <p style="color: var(--text-secondary);">Specialized in React and Django full-stack development, including modern web technologies, RESTful APIs, database design, and agile development practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here are some of my recent works</p>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" onclick="window.location.href='teacher-portal.html'" style="cursor: pointer;">
+                    <div class="project-image">
+                        <img src="media/title image.png" alt="Teacher Portal" style="width: 100%; height: 350px; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Teacher Portal - Student Progress Tracker</h3>
+                        <p>A comprehensive teacher portal for tracking student progression with automated PDF report generation and AI-powered insights. Features secure file storage using Amazon S3 buckets and real-time progress monitoring.</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">AWS S3</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="teacher-portal.html" class="project-link" onclick="event.stopPropagation()">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </a>
+                            <a href="https://github.com/KaiSwain/hammer-portfolio-django" class="project-link" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                            <p>Project 2</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Name 2</h3>
+                        <p>A brief description of your project. Explain what it does and what technologies you used to build it.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="project-2.html" class="project-link">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 3
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-code"></i>
+                            <p>Project 3</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Name 3</h3>
+                        <p>A brief description of your project. Explain what it does and what technologies you used to build it.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="project-3.html" class="project-link">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul>
+                        <li><i class="fab fa-node"></i> Node.js</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fas fa-database"></i> MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Other</h3>
+                    <ul>
+                        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                        <li><i class="fas fa-terminal"></i> Command Line</li>
+                        <li><i class="fab fa-docker"></i> Docker</li>
+                        <li><i class="fas fa-cloud"></i> REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Feel free to reach out for opportunities or just to say hi!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:highlightedfilms@gmail.com">highlightedfilms@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/kai-swain/" target="_blank">linkedin.com/in/kai-swain</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/KaiSwain" target="_blank">github.com/KaiSwain</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kai Swain. Built with <i class="fas fa-heart"></i> and lots of coffee.</p>
+            <div class="footer-links">
+                <a href="https://github.com/KaiSwain" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kai-swain/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:highlightedfilms@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

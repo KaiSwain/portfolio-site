@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal - Kai Swain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-showcase.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">&lt;KaiSwain /&gt;</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <h1 class="project-hero-title">Teacher Portal - Student Progress Tracker</h1>
+            <p class="project-hero-description">
+                A comprehensive web application designed to help teachers efficiently track student progress, 
+                generate automated reports, and leverage AI insights for better educational outcomes.
+            </p>
+            <div class="project-meta">
+                <span class="meta-item"><i class="fas fa-calendar"></i> 2025</span>
+                <span class="meta-item"><i class="fas fa-code"></i> Full Stack Development</span>
+                <span class="meta-item"><i class="fas fa-users"></i> Education Technology</span>
+            </div>
+            <div class="project-links-hero">
+                <a href="#" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> View Live Demo
+                </a>
+                <a href="https://github.com/KaiSwain/hammer-portfolio-django" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Screenshot -->
+    <section class="main-screenshot">
+        <div class="container">
+            <div class="screenshot-container">
+                <img src="media/Project 1 .png" alt="Teacher Portal Admin Panel" style="width: 100%; border-radius: 15px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Project Overview</h2>
+                    <p>
+                        This Teacher Portal was built to streamline the process of tracking student progression 
+                        throughout the academic year. Teachers can easily input student data, monitor performance 
+                        metrics, and generate comprehensive PDF reports for parent-teacher conferences.
+                    </p>
+                    <p>
+                        The platform integrates AI-powered analytics to provide insights into student learning 
+                        patterns and suggest personalized intervention strategies. All student files and reports 
+                        are securely stored using Amazon S3 buckets with proper authentication and encryption.
+                    </p>
+                    
+                    <h3 style="margin-top: 2rem;">Key Features</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Real-time student progress tracking and analytics</li>
+                        <li><i class="fas fa-check"></i> Automated PDF report generation with customizable templates</li>
+                        <li><i class="fas fa-check"></i> AI-powered insights and recommendations</li>
+                        <li><i class="fas fa-check"></i> Secure file storage with Amazon S3 integration</li>
+                        <li><i class="fas fa-check"></i> Responsive design for desktop and mobile use</li>
+                        <li><i class="fas fa-check"></i> Role-based access control for teachers and administrators</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-stack-card">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-category">
+                        <h4><i class="fas fa-server"></i> Backend</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Django REST Framework</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4><i class="fas fa-desktop"></i> Frontend</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4><i class="fas fa-cloud"></i> Infrastructure</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AWS S3</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Nginx</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4><i class="fas fa-robot"></i> AI & Tools</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">ReportLab (PDF)</span>
+                            <span class="tech-tag">Celery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="screenshots-gallery">
+        <div class="container">
+            <h2 class="section-title">Screenshots & Features</h2>
+            <p class="section-subtitle">Explore the key features and interface</p>
+            
+            <div class="gallery-grid">
+                <!-- Screenshot 1 -->
+                <div class="gallery-item">
+                    <img src="media/Project 1.png" alt="Student Portfolio View" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div class="gallery-caption">
+                        <h3>Student Portfolio Dashboard</h3>
+                        <p>Overview of all students with progress tracking across multiple training phases and program requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 2 -->
+                <div class="gallery-item">
+                    <img src="media/Project 1 image.png" alt="Individual Student Profile" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div class="gallery-caption">
+                        <h3>Individual Student Profile</h3>
+                        <p>Detailed student profile with training progress, personality assessments, OSHA certifications, and certificate generation.</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 3 -->
+                <div class="gallery-item">
+                    <img src="media/hirereport.png" alt="Hire Reports Management" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div class="gallery-caption">
+                        <h3>Hire Reports Management</h3>
+                        <p>Create and manage employment hire reports with PDF generation and easy access to student placement records.</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 4 -->
+                <div class="gallery-item">
+                    <img src="media/phase 2.png" alt="Job Readiness Phase" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div class="gallery-caption">
+                        <h3>Phase 2: Job Readiness Tracking</h3>
+                        <p>Track job readiness preparation including references, resumes, and required documentation with completion indicators.</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 5 -->
+                <div class="gallery-item">
+                    <img src="media/phase 3.png" alt="Job Placement Phase" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div class="gallery-caption">
+                        <h3>Phase 3: Job Placement & Follow-up</h3>
+                        <p>Monitor employment placement progress with automated follow-up tracking at 45-day and 90-day intervals.</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 6 -->
+                <div class="gallery-item">
+                    <img src="media/admin panel.png" alt="Comprehensive Admin Panel" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div class="gallery-caption">
+                        <h3>Comprehensive Admin Panel</h3>
+                        <p>Full student management interface with filtering, bulk actions, and detailed tracking of all program metrics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="challenges-section">
+        <div class="container">
+            <h2 class="section-title">Development Challenges & Solutions</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure File Storage</h3>
+                    <p><strong>Challenge:</strong> Needed a secure, scalable solution for storing student documents and generated reports.</p>
+                    <p><strong>Solution:</strong> Implemented Amazon S3 with presigned URLs and IAM policies to ensure secure file access and storage.</p>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>PDF Generation</h3>
+                    <p><strong>Challenge:</strong> Generating complex, formatted PDF reports with charts and tables on-demand.</p>
+                    <p><strong>Solution:</strong> Used ReportLab with Django to create custom PDF templates and Celery for async generation.</p>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Integration</h3>
+                    <p><strong>Challenge:</strong> Integrating AI to provide meaningful insights without compromising student privacy.</p>
+                    <p><strong>Solution:</strong> Implemented OpenAI API with data anonymization and rate limiting for ethical AI usage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learnings -->
+    <section class="learnings-section">
+        <div class="container">
+            <h2 class="section-title">Key Learnings</h2>
+            <div class="learnings-content">
+                <div class="learning-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>RESTful API Architecture</h3>
+                        <p>Built a comprehensive Django REST Framework API with token authentication, complex serializers handling nested relationships, and optimized queries using select_related for efficient database access patterns.</p>
+                    </div>
+                </div>
+                <div class="learning-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>Multi-Step Form Management</h3>
+                        <p>Designed and implemented progressive form interfaces in Next.js with comprehensive validation, supporting both create and edit modes while maintaining state consistency across complex multi-page workflows.</p>
+                    </div>
+                </div>
+                <div class="learning-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>Data Model Optimization</h3>
+                        <p>Architected a normalized database schema with foreign key relationships, created migrations for evolving requirements, and implemented serializers that balance data integrity with API performance.</p>
+                    </div>
+                </div>
+                <div class="learning-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>AI Integration for Content Generation</h3>
+                        <p>Integrated OpenAI API to generate personalized personality summaries based on assessment results, implementing prompt engineering and error handling for production reliability.</p>
+                    </div>
+                </div>
+                <div class="learning-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>Environment-Aware Configuration</h3>
+                        <p>Implemented auto-detecting development/production settings, managing separate configurations for local PostgreSQL and hosted databases, with CORS and authentication patterns that scale across environments.</p>
+                    </div>
+                </div>
+                <div class="learning-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>Service-Oriented Frontend Architecture</h3>
+                        <p>Built a centralized API service layer in Next.js with consistent authentication headers, token management in localStorage, and reusable patterns for CRUD operations across multiple resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project Navigation -->
+    <section class="next-project">
+        <div class="container">
+            <h3>Check out my other projects</h3>
+            <a href="index.html#projects" class="btn btn-primary">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kai Swain. Built with <i class="fas fa-heart"></i> and lots of coffee.</p>
+            <div class="footer-links">
+                <a href="https://github.com/KaiSwain" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kai-swain/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:highlightedfilms@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
