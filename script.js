@@ -124,25 +124,45 @@ const statsObserver = new IntersectionObserver((entries) => {
 stats.forEach(stat => statsObserver.observe(stat));
 
 // Contact Form Handling
-const contactForm = document.querySelector('.contact-form');
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        // Get form values
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const message = contactForm.querySelector('textarea').value;
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
         
-        // Basic validation
-        if (name && email && message) {
-            // Here you would normally send the form data to a server
-            // For now, we'll just show an alert
-            alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-            contactForm.reset();
-        } else {
-            alert('Please fill in all fields.');
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        formStatus.style.display = 'none';
+        
+        try {
+            const formData = new FormData(contactForm);
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#4caf50';
+                formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.';
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            formStatus.style.display = 'block';
+            formStatus.style.color = '#f44336';
+            formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please try again.';
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
         }
     });
 }
